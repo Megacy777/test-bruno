@@ -1,0 +1,18 @@
+meta {
+  name: login
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{base-url}}api/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "michael.lawson@reqres.in",
+      "password" : "password"
+  }
+}
