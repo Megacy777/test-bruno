@@ -1,0 +1,11 @@
+meta {
+  name: api-status
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base-url}}/status
+  body: json
+  auth: inherit
+}

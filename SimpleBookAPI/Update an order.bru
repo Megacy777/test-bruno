@@ -1,0 +1,25 @@
+meta {
+  name: Update an order
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{base-url}}/orders/:orderId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "bookId": 1,
+    "customerName": "Angel Schiller {{$randomLastName}}"
+  }
+  
+  // at first you will get a 204 PATCH req
+  // now send a GET req a see the response will have changed
+}

@@ -1,0 +1,15 @@
+meta {
+  name: fetching Single Book 
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base-url}}/books/:bookid?bookid=3
+  body: none
+  auth: none
+}
+
+query {
+  bookid: 3
+}

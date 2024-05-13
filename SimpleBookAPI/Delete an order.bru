@@ -1,0 +1,25 @@
+meta {
+  name: Delete an order
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{base-url}}/orders/:orderId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "bookId": 1,
+    "customerName": "Angel Schiller {{$randomLastName}}"
+  }
+  
+  // at first you will get a 204 DELETE req
+  // now send a GET req in [GET an order api] a see the response will have a deleted order
+}

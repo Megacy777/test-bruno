@@ -1,0 +1,17 @@
+meta {
+  name: List of books
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base-url}}/books
+  body: none
+  auth: none
+}
+
+query {
+  ~limit: 2
+  ~type: fiction
+  ~name: The Midnight Library
+}
