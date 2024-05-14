@@ -1,0 +1,23 @@
+meta {
+  name: order-book
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base-url}}/orders
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "bookId": 1,
+  //   "customerName": "John Massawe"
+    "customerName": "{{$randomFullName}}"
+  }
+}

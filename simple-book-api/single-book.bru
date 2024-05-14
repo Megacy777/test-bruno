@@ -1,0 +1,20 @@
+meta {
+  name: single-book
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base-url}}/books/1
+  body: json
+  auth: none
+}
+
+query {
+  : 
+  ~id: 1
+}
+
+vars:pre-request {
+  ~id: 1
+}

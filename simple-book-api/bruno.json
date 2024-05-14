@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "obtr-rahisi-api",
+  "name": "simple-book-api",
   "type": "collection",
   "ignore": [
     "node_modules",
@@ -8,6 +8,6 @@
   ],
   "presets": {
     "requestType": "http",
-    "requestUrl": "http://obtr.rahisi/"
+    "requestUrl": "https://simple-books-api.glitch.me"
   }
 }

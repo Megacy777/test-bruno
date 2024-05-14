@@ -1,0 +1,16 @@
+meta {
+  name: list-of-books
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base-url}}/books
+  body: none
+  auth: none
+}
+
+query {
+  ~type: non-fiction
+  ~limit: 2
+}
